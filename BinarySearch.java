@@ -12,12 +12,13 @@ public class BinarySearch {
         }
         
         Arrays.sort(numArray); // sort numbers in ascending order
+        System.out.printf("Sorted array: %s\n", Arrays.toString(numArray)); // print sorted array
 
         System.out.print("Enter the target number: "); // target number for binary search
         int target = scnr.nextInt();
         scnr.close();
 
-        System.out.println("Searching by Interation...");
+        System.out.println("Searching by Iteration...");
         System.out.printf("%d found at index %d\n", target, byLoop(numArray, target));
 
         System.out.println("Searching by Recursion...");
